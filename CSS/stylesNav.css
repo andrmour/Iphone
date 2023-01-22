@@ -1,0 +1,55 @@
+.topbar {
+    background-color: black;
+    color: white;
+}
+
+.topbar a {
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 12px;
+    padding: 6px 5px;
+}
+
+.topbar p {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    padding: 11px 0;
+}
+
+.topbar-nav {
+    text-align: center;
+    padding-bottom: 16px;
+}
+
+.topbar-nav a {
+    display: inline-block;
+    margin-right: 0 12px;
+    color: rgba(255, 255, 255, 0.67);
+    transition: 0.5s; /*transition sur la couleur*/
+    border-radius: 10px;
+}
+
+.topbar-nav a:hover {
+    color: #FFF;
+    background-color: rgba(136,0,150,1);
+    border-radius: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+    .topbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 64px;
+        padding: 0 25px;
+    }
+    .topbar-logo,
+    .topbar-nav {
+        padding: 0;
+    }
+
+    .topbar-nav a {
+        margin: 0 20px;
+    }
+}
